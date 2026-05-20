@@ -334,7 +334,7 @@ def frost(x, severity=1):
          (0.65, 0.7),
          (0.6, 0.75)][severity - 1]
 
-    idx = np.random.randint(5)
+    idx = np.random.randint(6)
     filename = [resource_filename(__name__, './frost/frost1.png'),
                 resource_filename(__name__, './frost/frost2.png'),
                 resource_filename(__name__, './frost/frost3.png'),
