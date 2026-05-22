@@ -1,21 +1,20 @@
 # -*- coding: utf-8 -*-
-import importlib.resources
-
-import numpy as np
-import math
-from PIL import Image
-
-# /////////////// Corruption Helpers ///////////////
-
-import skimage as sk
-from skimage.filters import gaussian
 from io import BytesIO
+import importlib.resources
+import math
+
 import cv2
+from numba import njit
+import numpy as np
+from PIL import Image
 from scipy.ndimage import zoom as scizoom
 from scipy.ndimage.interpolation import map_coordinates
-from numba import njit
+import skimage as sk
+from skimage.filters import gaussian
 
 SK_VERSION = {k:int(v) for k,v in zip(['major', 'minor'], sk.__version__.split('.')[:2])}
+
+# /////////////// Corruption Helpers ///////////////
 
 def disk(radius, alias_blur=0.1, dtype=np.float32):
     if radius <= 8:
