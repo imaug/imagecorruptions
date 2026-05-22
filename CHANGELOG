@@ -1,5 +1,6 @@
-# Changes in master:
+# Changes in Version 1.1.4dev1:
 - bugfix: fixed logic in frost
+- dependency: Switch from depreciated pkg_resources to importlib
 
 # Changes in Version 1.1.3:
 - improved determinism
