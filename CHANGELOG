@@ -1,4 +1,4 @@
-# Changes in Version 1.1.4dev1:
+# Changes in Version 1.1.4:
 - bugfix: fixed logic in frost
 - dependency: Switch from depreciated pkg_resources to importlib
 
